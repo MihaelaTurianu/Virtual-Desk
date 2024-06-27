@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Working Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="https://fonts.googleapis.com/css?family=Arvo|Emblema+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Tulpen+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/Desk.css">
+<link rel="shortcut icon" href="./images/cat.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="stickydiv">
+  <a id="btn-old-pc" href="#containers" data-title="Shelf 1"></a>
+  <a id="btn-old-pc" href="#container" data-title="Shelf 2"></a>
+  <a id="btn-old-pc" href="#containeryz" data-title="Shelf 3"></a>
+  <a id="btn-old-pc1" href="#foots" data-title="Links"></a>
+  <a id="btn-old-pc2" href="./PlayRoom.html" data-title="Play Room"></a>
+  <a id="btn-old-pc3" href="./Contact.html" data-title="Contact"></a>
+</div>
+    <!-- Nav Section -->
+
+<div id="containers">
+<nav class="titleglow">﹥Virtual Office Desk</nav>
+</div>
+</div>
+<div class="level_one">
+
+
+    <!-- Weather Section -->
+
+<div class="card">
+<div class="search">
+<input id="input" type="text" placeholder="Choose Location" spellcheck="false">
+<button style="background-color: transparent;"><img src="https://cdn-icons-png.flaticon.com/256/3481/3481333.png" alt="searchicon"></button>
+</div>
+
+<div class="weather">
+        <img src="https://cdn1.iconfinder.com/data/icons/magicweather/256/snow.png" class="weather-icon" alt="raindrop">
+        <h1 class="temp">-44°C</h1>
+        <h2 class="city">Antarctica</h2>
+        <div class="details">
+            <div class="unu"><div class="col">
+                <img src="https://cdn-icons-png.freepik.com/512/4148/4148388.png" alt="water">
+                <div>
+                    <p class="humidity">40%</p>
+                    <p style="color: aliceblue; font-size: 20px;">Dampness</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="https://cdn-icons-png.freepik.com/512/6354/6354693.png" alt="speed">
+                <div>
+                    <p class="wind">20 kM/h</p>
+                    <p style="color: aliceblue; font-size: 20px;">Velocity</p>
+                </div>
+            </div>  
+        </div>  
+        <div class="doi">
+            <div class="colt">
+                <img src="https://cdn-icons-png.flaticon.com/512/2675/2675979.png
+                " alt="time">
+                <div>
+                    <p class="clouds">1080hPa</p>
+                    <p style="color: aliceblue; font-size: 20px;">Pressure</p>
+                </div>
+            </div>
+            <div class="colt">
+                <img src="https://cdn-icons-png.flaticon.com/512/1601/1601909.png" alt="eyes">
+                <div>
+                    <p class="grnd_level">10000m</p>
+                    <p style="color: aliceblue; font-size: 20px;">Visibility</p>
+                </div>
+            </div>
+        </div>
+                <script>
+                    const apiKey = "f4ee04de69c369c91d288a5899bb1ec5";
+
+                    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+                    const searchBox = document.querySelector(".search input");
+                    const searchBtn = document.querySelector(".search button");
+                    const weatherIcon = document.querySelector(".weather-icon");
+
+                    async function checkWeather(city) {
+                        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+
+                        var data = await response.json();
+
+                        console.log(data);
+
+                        document.querySelector(".city").innerHTML = data.name;
+
+                        document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+
+                        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+
+                        document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+
+                        document.querySelector(".grnd_level").innerHTML = data.visibility + "m";
+
+                        document.querySelector(".clouds").innerHTML = data.main.pressure + " hPa";
+
+                        if(data.weather[0].main == "Clouds"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/cloudiness.png"
+                        }
+                        else if(data.weather[0].main == "Clear"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/sun.png"
+                        }
+                        else if(data.weather[0].main == "Rain"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/rain.png"
+                        }
+                        else if(data.weather[0].main == "Drizzle"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/rain.png"
+                        }
+                        else if(data.weather[0].main == "Mist"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/fog.png"
+                        }
+                        else if(data.weather[0].main == "Snow"){
+                            weatherIcon.src = "https://cdn1.iconfinder.com/data/icons/magicweather/256/snow.png"
+                        }
+
+                    }
+
+
+                    searchBtn.addEventListener("click", ()=>{
+                        checkWeather(searchBox.value);});
+
+                    
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Clock Section -->
+
+<div class="clock">
+  <div class="hour hand" id="hour"></div>
+  <div class="minute hand" id="minute"></div>
+  <div class="seconds hand" id="seconds"></div>
+  <img class="clockimg" src="https://thebigclockstore.com/wp-content/uploads/2018/04/Augustus-4.png" alt="clock">
+</div>
+<script>let hour = document.getElementById("hour");
+  let minute = document.getElementById("minute");
+  let seconds = document.getElementById("seconds");
+  let set_clock = setInterval(() => {
+      let date_now = new Date();
+      let hr = date_now.getHours();
+      let min = date_now.getMinutes();
+      let sec = date_now.getSeconds();
+      let calc_hr = (hr * 30) + (min / 2);
+      let calc_min = (min * 6) + (sec / 10);
+      let calc_sec = sec * 6;
+      hour.style.transform = `rotate(${calc_hr}deg)`;
+      minute.style.transform = `rotate(${calc_min}deg)`;
+      seconds.style.transform = `rotate(${calc_sec}deg)`;
+  }, 1000);</script>
+
+
+<div class="polaroid"><img src="https://static.wixstatic.com/media/a5e7d5_d0ecc3d4e26a46b8924928b9f7c1b3df~mv2.png/v1/fill/w_2500,h_1406,al_c/a5e7d5_d0ecc3d4e26a46b8924928b9f7c1b3df~mv2.png" alt=""></div>
+<div class="bookz"><img src="https://static.vecteezy.com/system/resources/previews/009/379/892/non_2x/cartoon-book-history-book-diary-wisdom-education-old-book-clipart-design-illustration-free-png.png" alt=""></div>
+<!-- Coffee Cup -->
+
+<div class="cup-container">
+<div class="plate"></div>
+<div class="cup">
+<div class="handle"></div>
+<div class="top">
+    <div class="vapour">
+        <span style="--i:1;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:8;"></span>
+    </div>
+<div class="circle">
+<div class="coffee">
+</div></div></div></div></div>
+
+
+
+<div id="shelfOne"><img src="./images/shelf-576088_960_720.webp" alt=""></div>
+
+
+
+
+<!-- Stopwatch Section-->
+
+<section id="container">
+  <span class="namewatch">Chrono</span>
+    <div id="display">
+      <span class="time hour">00</span>
+      <p class="dot">:</p>
+      <span class="time minute">00</span>
+      <p class="dot">:</p>
+      <span class="time second">00</span>
+      <p class="dot">:</p>
+      <span class="time millisecond">000</span>
+    </div>
+  
+    <div class="buttons">
+      <button id="play" onclick="startStop()">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button id="reset" onclick="reset()">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+      </button>
+    </div>
+   
+    <script>
+        let startTime;
+let timer;
+let elapsedTime = 0;
+let isRunning = false;
+const playButton = document.getElementById("play");
+
+const startStop = () => {
+  if (isRunning) {
+    stop();
+  } else {
+    start();
+  }
+};
+
+const start = () => {
+  startTime = new Date().getTime() - elapsedTime;
+  isRunning = true;
+  update();
+};
+
+const stop = () => {
+  isRunning = false;
+  clearTimeout(timer);
+};
+
+const displaying = (hour, minute, second, millisecond) => {
+  document.querySelector(".hour").innerHTML = hour;
+  document.querySelector(".minute").innerHTML = minute;
+  document.querySelector(".second").innerHTML = second;
+  document.querySelector(".millisecond").innerHTML = millisecond;
+};
+
+const reset = () => {
+  stop();
+  displaying("00", "00", "00", "000");
+  elapsedTime = 0;
+  playButton.innerHTML = "<i class='fa-solid fa-play'></i>";
+  update();
+};
+
+const update = () => {
+  const currentTime = new Date().getTime();
+
+  if (isRunning) {
+    elapsedTime = currentTime - startTime;
+    updateDisplay(elapsedTime);
+    timer = setTimeout(update, 10);
+  }
+};
+
+function updateDisplay(elapsedTime) {
+  const milliseconds = Math.floor(elapsedTime % 1000);
+  const seconds = Math.floor((elapsedTime / 1000) % 60);
+  const minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+  const hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+
+  displaying(
+    formatTime(hours),
+    formatTime(minutes),
+    formatTime(seconds),
+    formatMilliseconds(milliseconds)
+  );
+}
+
+const formatTime = (time) => {
+  return time < 10 ? "0" + time : time;
+};
+
+function formatMilliseconds(milliseconds) {
+  let result;
+
+  if (milliseconds < 10) {
+    result = "00" + milliseconds;
+  } else if (milliseconds < 100) {
+    result = "0" + milliseconds;
+  } else {
+    result = milliseconds;
+  }
+
+  return result;
+}
+
+playButton.addEventListener("click", () => {
+  const icon = document.querySelector(".icon");
+
+  if (icon.classList.contains("fa-play")) {
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+  } else {
+    icon.classList.remove("fa-pause");
+    icon.classList.add("fa-play");
+  }
+});
+    </script>
+  </section>
+
+  <!--Calendar Area-->
+
+  <div class="main-div">
+    <div class="sub-div">
+      <div class="top-div">
+        <ul class="calend">
+          <li class="calen"></li>
+          <li class="calen"></li>
+          <li class="calen"></li>
+          <li class="calen"></li>
+        </ul>
+      </div>
+      <div class="year-div">
+        <div id="month"></div>
+        <div id="year"></div>
+      </div>
+    </div>
+    <div class="date-div">
+      <p id="date">
+      </p>
+      <p id="day">aaaa</p>
+    </div>
+    <script>const month = new Date();
+        const options = {
+          month: "long"
+        };
+        
+        const year1 = new Date();
+        
+        let year = year1.getFullYear();
+        
+        const date1 = new Date();
+        
+        let date = date1.getDate();
+        
+        const day = new Date();
+        
+        const options2 = {
+          weekday: "long"
+        };
+        
+        console.log(day.toLocaleString("en-IN", options2));
+        
+        function myFunction() {
+          document.getElementById("month").innerText = month.toLocaleString(
+            "en-IN",
+            options
+          );
+          document.getElementById("year").innerText = year;
+          document.getElementById("date").innerText = date;
+          document.getElementById("day").innerText = day.toLocaleString(
+            "en-IN",
+            options2
+          );
+        }
+        myFunction();</script>
+        <script src="https://kit.fontawesome.com/3dd48f99d8.js" crossorigin="anonymous"></script>
+  </div>
+
+
+<!--Penholder-->
+
+<div class="penholder">
+
+  <div class="bottom"></div>
+  <div class="side"></div>
+<div class="top-back"></div>
+ <div class="top-front"></div>
+
+<div class="contents">
+<div class="pencil">
+  <div class="eraser"></div>
+  <div class="tip"></div>
+  <div class="erasero"></div>
+</div>
+
+ <div class="pencil">
+  <div class="eraser"></div>
+   <div class="tip"></div>
+   <div class="erasero"></div>
+</div>
+
+ <div class="pencil">
+  <div class="eraser"></div>
+   <div class="tip"></div>
+   <div class="erasero"></div>
+</div>
+
+ <div class="pencil">
+  <div class="eraser"></div>
+   <div class="tip"></div>
+   <div class="erasero"></div>
+</div>
+
+ <div class="pencil">
+  <div class="eraser"></div>
+<div class="tip"></div>
+<div class="erasero"></div>
+  </div>
+</div>
+</div>
+
+
+<!--Joke Gen-->
+<div class="jokeheight">
+  <div class="wrapper">
+    <span class="jokegen">💻</span>
+    <p id="joke"></p>
+    <button id="btn">Get Random Joke</button>
+  </div>
+  </div>
+  <script>
+  const jokeContainer = document.getElementById("joke");
+  const btn = document.getElementById("btn");
+  const url = "https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+  let getJoke = () => {
+      jokeContainer.classList.remove("fade");
+      fetch(url)
+      .then(data => data.json())
+      .then(item =>{
+          jokeContainer.textContent = `${item.joke}`;
+          jokeContainer.classList.add("fade");
+      });
+  }
+  btn.addEventListener("click",getJoke);
+  getJoke();
+  </script>
+
+
+<!--Casio Calculator-->
+
+
+<div class="cont">
+  <form class="calcu" name="calc">
+    <h2 class="logo">Casio</h2>
+    <!--  RESULT OUTPUT  -->
+    <input class="value" type="text" name="txt" placeholder="0">
+    <!--  CLEAR ALL  -->
+    <span class="num clear" onclick="document.calc.txt.value =''">CA</span>
+    <!--  BACKSPACE  -->
+    <span class="num del" onclick="document.calc.txt.value = calc.txt.value.substring(0, document.calc.txt.value.length*1 -1)"><span class="material-icons-outlined">⌫</span></span>
+    <!--  SQUARED  -->
+    <span class="num exp" onclick="document.calc.txt.value = (Math.pow(calc.txt.value, 2))">x<sup>2</sup></span>
+
+    <span class="num numx" onclick="document.calc.txt.value +='/'">÷</span>
+    <span class="num nums" onclick="document.calc.txt.value +='7'">7</span>
+    <span class="num nums" onclick="document.calc.txt.value +='8'">8</span>
+    <span class="num nums" onclick="document.calc.txt.value +='9'">9</span>
+    <span class="num numx" onclick="document.calc.txt.value +='*'">*</span>
+    <span class="num nums" onclick="document.calc.txt.value +='4'">4</span>
+    <span class="num nums" onclick="document.calc.txt.value +='5'">5</span>
+    <span class="num nums" onclick="document.calc.txt.value +='6'">6</span>
+    <span class="num numx" onclick="document.calc.txt.value +='-'">-</span>
+    <span class="num nums" onclick="document.calc.txt.value +='1'">1</span>
+    <span class="num nums" onclick="document.calc.txt.value +='2'">2</span>
+    <span class="num nums" onclick="document.calc.txt.value +='3'">3</span>
+    <span class="num numx" onclick="document.calc.txt.value +='+'">+</span>
+    <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+    <span class="num nums" onclick="document.calc.txt.value +='0'">0</span>
+    <!--  SQUAREROOT  -->
+    <span class="num" onclick="document.calc.txt.value = Math.sqrt(calc.txt.value)">√</span>
+    <!--  RESULT IS ROUNDED TO 2 DECMAL NUMS  -->
+    <span class="num equals numx" onclick="document.calc.txt.value = Number((eval(calc.txt.value)).toFixed(2));">=</span>
+  </form>
+</div>
+
+
+
+
+<div class="shelfTwo"><img src="./images/shelf-576088_960_720.webp"></div>
+
+
+
+
+
+<!--Lava Lamp-->
+
+<svg class="lamp" viewBox="-21 0 100 125">
+	<defs>
+		<filter id="goo">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="4" result="color-matrix-blur"></feGaussianBlur>
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 22 -8" result="color-matrix-filter"></feColorMatrix>
+			<feComposite in="SourceGraphic" in2="filter" operator="atop"></feComposite>
+		</filter>
+		<linearGradient id="glass" gradientTransform="rotate(0)">
+      <stop offset="15%"  stop-color="rgba(255,255,255,0)" />
+      <stop offset="95%" stop-color="rgba(255,255,255,0.3)" />
+    </linearGradient>
+		<linearGradient id="silver" gradientTransform="rotate(0)">
+      <stop offset="15%"  stop-color="rgb(102,102,102)" />
+      <stop offset="95%" stop-color="rgb(192,192,192)" />
+    </linearGradient>
+	</defs>
+	<g class="gloops" filter="url(#goo)">
+		<ellipse rx="10%" ry="10%" class="circle" fill="rgb(0, 255, 209)">
+			<animate attributeName="cx" values="28%; 33%; 28%" dur="12s" repeatCount="indefinite" />
+			<animate attributeName="cy" values="16%; 69%; 16%" dur="12.2s" repeatCount="indefinite" keyTimes="0;0.6;1" />
+			<animate attributeName="rx" values="7%; 4%; 7%" dur="10.4s" begin="-1" repeatCount="indefinite" />
+			<animate attributeName="ry" values="7%; 4%; 7%" dur="19.4s" begin="-3" repeatCount="indefinite" />
+			<animate attributeName="fill" values="rgb(148, 255, 216); rgb(93, 235, 215); rgb(21, 245, 186)" dur="10s" begin="-1" repeatCount="indefinite" />
+		</ellipse>
+		<ellipse r="10%" class="circle" fill="rgb(0, 245, 255)">
+			<animate attributeName="cx" values="28%; 33%; 28%" dur="11.2s" begin="-12" repeatCount="indefinite" />
+			<animate attributeName="cy" values="16%; 69%; 16%" dur="14.1s" begin="-4" repeatCount="indefinite" keyTimes="0;0.6;1" />
+			<animate attributeName="rx" values="7%; 4%; 7%" dur="9.4s" begin="-5" repeatCount="indefinite" />
+			<animate attributeName="ry" values="7%; 4%; 7%" dur="10.4s" begin="-3" repeatCount="indefinite" />
+			<animate attributeName="fill" values="rgb(69, 255, 202); rgb(0, 255, 202); rgb(39, 225, 193)" dur="10s" begin="-1" repeatCount="indefinite" />
+		</ellipse>
+		<ellipse r="10%" class="circle" fill="rgb(0, 255, 171)">
+			<animate attributeName="cx" values="28%; 33%; 28%" dur="11.7s" begin="-6" repeatCount="indefinite" />
+			<animate attributeName="cy" values="16%; 69%; 16%" dur="16.4s" begin="-9" repeatCount="indefinite" keyTimes="0;0.6;1" />
+			<animate attributeName="rx" values="7%; 4%; 7%" dur="7.4s" begin="-4" repeatCount="indefinite" />
+			<animate attributeName="ry" values="7%; 4%; 7%" dur="13.4s" begin="-5" repeatCount="indefinite" />
+			<animate attributeName="fill" values="rgb(0, 255, 209); rgb(0, 255, 171); rgb(21, 245, 186)" dur="10s" begin="-1" repeatCount="indefinite" />
+		</ellipse>
+		<ellipse cx="30" cy="18" rx="10" ry="4" fill="rgb(0, 255, 202)" />
+		<ellipse cx="30" cy="87" rx="15" ry="10" fill="rgb(0, 255, 202)" />
+	</g>
+	<path fill="rgb(28, 10, 0)" d="M 25 1 L 21 19 Q 30 21 39 19 L 35 1 Q 30 0 25 1" />
+	<path fill="rgb(54, 21, 0)" d="M 12 83 L 19 100 Q 30 102 41 100 L 48 83 Q 30 88 12 83" />
+	<path fill="rgb(96, 54, 1)" d="M 19 100 L 8 119 Q 30 130 52 119 L 41 100 Q 30 102 19 100z" />
+	<path fill="rgba(163, 255, 214, 0.3)" d="M 21 19 C 19 29 6 68 9 75 L 12 83 Q 30 88 48 83 L 51 75 C 54 68 41 29 39 19 Q 30 21 21 19"  />
+</svg>
+
+
+<!--Plant-->
+
+<div class="deskplant">
+  <img src="https://cdn3d.iconscout.com/3d/premium/thumb/snake-plant-pot-10483151-8458934.png" alt="" height="550px">
+</div>
+
+
+
+
+<!--Random Num Gen-->
+
+<div id="containersz">
+  <div id="boxd">
+      <div class="input"><label for="min">Min</label><input type="number" id='min'></div>
+      <div class="input"><label for="max">Max</label><input type="number" id="max"></div>
+      <div id="btnc"><input type="button" value="generate number"></div>
+      <div id="output">0</div>
+  </div>
+</div>
+<script>let generate = document.getElementById('btnc');
+  generate.addEventListener('click', () => {
+      let min = document.getElementById('min').value;
+      let max = document.getElementById('max').value;
+      let random_num= Math.floor(Math.random()*(max-min) + +min);
+      document.getElementById('output').innerHTML = ` ${random_num}`;
+  })    </script>        
+
+
+<!--Text Editor-->
+
+  <div id="containeryz">
+    <h1>Tasks List</h1>
+    <div id="new-task">
+      <input type="text" placeholder="Enter The Task Here" />
+      <button id="push">Add</button>
+    </div>
+    <div id="tasks"></div>
+  </div>
+
+  <!-- Script -->
+  <script>//Initial References
+    const newTaskInput = document.querySelector("#new-task input");
+    const tasksDiv = document.querySelector("#tasks");
+    let deleteTasks, editTasks, tasks;
+    let updateNote = "";
+    let count;
+    
+    //Function on window load
+    window.onload = () => {
+      updateNote = "";
+      count = Object.keys(localStorage).length;
+      displayTasks();
+    };
+    
+    //Function to Display The Tasks
+    const displayTasks = () => {
+      if (Object.keys(localStorage).length > 0) {
+        tasksDiv.style.display = "inline-block";
+      } else {
+        tasksDiv.style.display = "none";
+      }
+    
+      //Clear the tasks
+      tasksDiv.innerHTML = "";
+    
+      //Fetch All The Keys in local storage
+      let tasks = Object.keys(localStorage);
+      tasks = tasks.sort();
+    
+      for (let key of tasks) {
+        let classValue = "";
+    
+        //Get all values
+        let value = localStorage.getItem(key);
+        let taskInnerDiv = document.createElement("div");
+        taskInnerDiv.classList.add("task");
+        taskInnerDiv.setAttribute("id", key);
+        taskInnerDiv.innerHTML = `<span id="taskname">${key.split("_")[1]}</span>`;
+        //localstorage would store boolean as string so we parse it to boolean back
+        let editButton = document.createElement("button");
+        editButton.classList.add("edit");
+        editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
+        if (!JSON.parse(value)) {
+          editButton.style.visibility = "visible";
+        } else {
+          editButton.style.visibility = "hidden";
+          taskInnerDiv.classList.add("completed");
+        }
+        taskInnerDiv.appendChild(editButton);
+        taskInnerDiv.innerHTML += `<button class="delete"><i class="fa-solid fa-trash"></i></button>`;
+        tasksDiv.appendChild(taskInnerDiv);
+      }
+    
+      //tasks completed
+      tasks = document.querySelectorAll(".task");
+      tasks.forEach((element, index) => {
+        element.onclick = () => {
+          //local storage update
+          if (element.classList.contains("completed")) {
+            updateStorage(element.id.split("_")[0], element.innerText, false);
+          } else {
+            updateStorage(element.id.split("_")[0], element.innerText, true);
+          }
+        };
+      });
+    
+      //Edit Tasks
+      editTasks = document.getElementsByClassName("edit");
+      Array.from(editTasks).forEach((element, index) => {
+        element.addEventListener("click", (e) => {
+          //Stop propogation to outer elements (if removed when we click delete eventually rhw click will move to parent)
+          e.stopPropagation();
+          //disable other edit buttons when one task is being edited
+          disableButtons(true);
+          //update input value and remove div
+          let parent = element.parentElement;
+          newTaskInput.value = parent.querySelector("#taskname").innerText;
+          //set updateNote to the task that is being edited
+          updateNote = parent.id;
+          //remove task
+          parent.remove();
+        });
+      });
+    
+      //Delete Tasks
+      deleteTasks = document.getElementsByClassName("delete");
+      Array.from(deleteTasks).forEach((element, index) => {
+        element.addEventListener("click", (e) => {
+          e.stopPropagation();
+          //Delete from local storage and remove div
+          let parent = element.parentElement;
+          removeTask(parent.id);
+          parent.remove();
+          count -= 1;
+        });
+      });
+    };
+    
+    //Disable Edit Button
+    const disableButtons = (bool) => {
+      let editButtons = document.getElementsByClassName("edit");
+      Array.from(editButtons).forEach((element) => {
+        element.disabled = bool;
+      });
+    };
+    
+    //Remove Task from local storage
+    const removeTask = (taskValue) => {
+      localStorage.removeItem(taskValue);
+      displayTasks();
+    };
+    
+    //Add tasks to local storage
+    const updateStorage = (index, taskValue, completed) => {
+      localStorage.setItem(`${index}_${taskValue}`, completed);
+      displayTasks();
+    };
+    
+    //Function To Add New Task
+    document.querySelector("#push").addEventListener("click", () => {
+      //Enable the edit button
+      disableButtons(false);
+      if (newTaskInput.value.length == 0) {
+        alert("Please Enter A Task");
+      } else {
+        //Store locally and display from local storage
+        if (updateNote == "") {
+          //new task
+          updateStorage(count, newTaskInput.value, false);
+        } else {
+          //update task
+          let existingCount = updateNote.split("_")[0];
+          removeTask(updateNote);
+          updateStorage(existingCount, newTaskInput.value, false);
+          updateNote = "";
+        }
+        count += 1;
+        newTaskInput.value = "";
+      }
+      
+    });</script>
+</div>
+
+<div class="shelfThree"><img src="./images/shelf-576088_960_720.webp"></div>
+
+<!--Printer-->
+
+<div class="printerimg"><img src="https://www.brother.in/-/media/ap2/india/migration/microsite/brother-ink-tank/images/office-sec9-print-r1.png?rev=f776327ee55e47fd8d4d3a67189eb771&hash=D107568B3FD167B0C8B56E9F77D46B4A" alt=""></div>
+
+
+<!--audio player-->
+
+
+
+  <!--Scroller-->
+
+<section id='headline'>
+  <div class='scroller'>
+    <div class='scrolled'>
+      <div class='text'>
+        OUT OF ORDER! KEEP SCROLLING!
+      </div>
+      <div class='text'>
+        OUT OF ORDER! KEEP SCROLLING!
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+</body>
+<footer id="foots">
+<div class="col-md-3">
+          <h4 class="footsh">Find me on </h4>
+              <ul class="social-network social-circle">
+               <li><a href="https://www.youtube.com/channel/UCKTAHVPmusXv0TFWSEweevA" class="icoYoutube" title="Youtube"><i class="fa-brands fa-square-youtube"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/turianu-mihaela-253675277/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/mishaurbanexploring/?hl=en" class="icoInstagram" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+              </ul>				
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12 copy">
+        <p class="text-center">Project realized by Mihaela Turianu - 2024</p>
+      </div>
+    </div>
+  
+  
+    </div>
+    </div>
+  </footer>
+</footer>
+</html>

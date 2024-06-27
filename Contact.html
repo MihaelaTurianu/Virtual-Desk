@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtual Interactive Working Desk</title>
+        <link rel="stylesheet" href="./css/Contact.css">
+        <link rel="shortcut icon" href="./images/cat.ico" type="image/x-icon">
+    </head>
+</head>
+<body>
+    <section class="card">
+
+        <h1 class="h1 form-title">Contact your office POC Mihaela:</h1>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+          <div class="input-wrapper">
+            <input type="hidden" name="access_key" value="7a91096d-cf98-416b-ba51-aa004691c264">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+          <button id="btn-old-pc1" type="submit" disabled data-form-btn><span>Send Message</span>
+         
+          
+            
+          </button>
+<script>// contact form variables
+    const form = document.querySelector("[data-form]");
+    const formInputs = document.querySelectorAll("[data-form-input]");
+    const formBtn = document.querySelector("[data-form-btn]");
+    
+    // add event to all form input field
+    for (let i = 0; i < formInputs.length; i++) {
+      formInputs[i].addEventListener("input", function () {
+    
+        // check form validation
+        if (form.checkValidity()) {
+          formBtn.removeAttribute("disabled");
+        } else {
+          formBtn.setAttribute("disabled", "");
+        }
+    
+      });
+    }</script>
+        </form>
+            
+        <a id="btn-old-pc" href="./Desk.html" data-title="Back to Desk"></a>
+      </div>
+      </section>
+    </body>
+</html>
