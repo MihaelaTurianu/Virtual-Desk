@@ -1,0 +1,261 @@
+.contact-form { margin-bottom: 10px;
+width: 90%;
+}
+
+
+::-webkit-scrollbar {
+  width: 1.8em;
+  background: #543310;
+  height: 100%;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+  background: #5F6F52;
+  border-radius: 100vw;
+  border: .40em solid #2C3639;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover{
+  background: #A9B388
+  }
+  
+  
+
+html {
+  scroll-behavior: smooth;
+  background-image: url(https://cdn.architextures.org/textures/22/01/microperforated-acoustic-veneer-hexagonal-61d5d7977a17f-1200.jpg);
+  }
+
+body {
+  font-family: Agency FB;
+  font-weight: 300;
+  font-style: normal;
+  width: 1050px;
+  margin: 0 auto;
+  text-align: center; 
+  display: grid;
+  background-blend-mode: multiply;
+background-repeat: repeat;
+  place-items: center;
+  color: var(--clr-neon);
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Agency FB;
+  font-weight: 400;
+  font-size: 30px;
+  color: #F4E869;
+}
+
+.form-title { margin-bottom: 20px; }
+
+.input-wrapper {
+  display: grid;
+
+}
+
+.form-input {
+  color: #F4E869;
+  font-size:15px;
+  font-weight: 300;
+  background: #35495E;
+  width: 400px;
+  margin-left:120px;
+}
+
+.form-input::placeholder { 
+  font-weight: var(--fw-500); 
+  font-family: Agency FB; 
+  font-size: larger; 
+  color: #FCFFB2;
+}
+
+
+
+textarea.form-input {
+  height: 120px;
+  margin-bottom: 25px;
+}
+
+
+
+.input-wrapper {
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-input { padding: 15px 20px; }
+
+textarea.form-input { margin-bottom: 30px; }
+
+/*  Old PC Plastic BTN */
+#btn-old-pc {
+  background-color: #080808;
+  color: #D3D04F;
+  text-align: center;
+  position: relative;
+  width: 137px;
+  height: 50px;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 1.3em;
+  transition: .2s;
+  cursor: pointer;
+ top: 100px;
+ font-family: Agency FB;
+margin-top: 50PX;
+}
+#btn-old-pc::after {
+  content: attr(data-title);
+  line-height: 2.6em;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-color: #2a3c44;
+  color: #D3D04F;
+  text-shadow: 0px 2px 1px #1a2b2c;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 5px solid #3e5156;
+  border-left: 8px solid #213234;
+  border-right: 8px solid #3c3836;
+  border-bottom: 12px solid #101b1c;
+  border-radius: 6px;
+  opacity: 1;
+  box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #35374B;
+  transition: .2s;
+}
+#btn-old-pc:hover::after {
+  opacity: 1;
+  transform: scale(.97);
+  border-top: 8px solid #26363a;
+  border-bottom: 9px solid #101b1c;
+  border-right: 8px solid #2b2725;
+  background-color: #1d323b;
+  color: #35494e;
+  box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
+}
+
+
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+
+.card{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin:20% auto;
+  padding: 150px 0;
+  width: 970px;
+  height: 560px;
+  border-radius: 5px;
+  background-color: #111; 
+  transition: all ease-in-out;
+  align-items: center;
+}
+
+
+.card::before{
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  margin-top: -7px;
+  left: -2%;
+  content: "";
+  height: 890px;
+  width: 1007px;
+  border-radius: 8px;
+  border: 0.1px solid rgba(43, 43, 43, 0.199);
+  background-image: linear-gradient(
+      var(--rotate),
+      #35374B,#344955, #50727B,#D3D04F);
+  transition: opacity 2s ease-in-out;
+  animation: swirl 5s linear infinite;
+}
+
+
+
+
+@keyframes swirl {
+  0%{
+      --rotate: 0deg;
+  }
+  100%{
+      --rotate: 360deg;
+  }   
+}
+
+#btn-old-pc1 {
+  background-color: #080808;
+  color: #D3D04F;
+  text-align: center;
+  position: relative;
+  width: 145px;
+  height: 60px;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+  border-radius: 5px;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 1.3em;
+  transition: .2s;
+  cursor: pointer;
+ font-family: Agency FB;
+top: 30px;
+left: -140px;
+}
+#btn-old-pc1::after {
+  content: attr(data-title);
+  line-height: 2.6em;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-color: #2a3c44;
+  color: #D3D04F;
+  text-shadow: 0px 2px 1px #1a2b2c;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 5px solid #3e5156;
+  border-left: 8px solid #213234;
+  border-right: 8px solid #3c3836;
+  border-bottom: 12px solid #101b1c;
+  border-radius: 6px;
+  opacity: 1;
+  box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #35374B;
+  transition: .2s;
+}
+#btn-old-pc1:hover::after {
+  opacity: 1;
+  transform: scale(.97);
+  border-top: 8px solid #26363a;
+  border-bottom: 9px solid #101b1c;
+  border-right: 8px solid #2b2725;
+  background-color: #1d323b;
+  color: #35494e;
+  box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
+}
