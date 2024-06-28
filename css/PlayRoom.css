@@ -121,7 +121,7 @@ html {
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 0;
-      margin-left: 1030px;
+      margin-left: 1020px;
       border: #A3C9AA  15px solid;
       width: 175px;
       border-bottom-right-radius: 15px;
@@ -135,7 +135,7 @@ html {
 
       .lines {
         position: relative;
-        width: 1020px;
+        width: 1010px;
         height: 4em;
         background-image: url(https://images.squarespace-cdn.com/content/v1/6378c229f19acf2644411a4f/1c77c347-717f-447d-b0e9-6535b87bc1ba/3.png);
         background-size: 1px 0.7em;
