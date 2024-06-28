@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Working Desk</title>
     <link rel="stylesheet" href="./css/PlayRoom.css">
-    <link rel="shortcut icon" href="./images/cat.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2024/06/13/07/56/ai-generated-8826972_640.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Kenia&family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Keania+One&family=Kenia&family=Mr+Dafoe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Keania+One&family=Kenia&family=Mr+Dafoe&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Keania+One&family=Kenia&family=Mr+Dafoe&family=Orbitron:wght@400..900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -441,7 +442,7 @@ initialize();
 
     </script>
 <Div class="descriptivetext1">
-  "Adder is a rendition of a game most people loved and hated in the same time. If you wanna feel a little nostalgic give it a spin. It never dies and keeps growing. When you want to start over, hit the Restart button!"
+  "Adder is a rendition of a game most people loved and hated in the same time. If you wanna feel a little nostalgic give it a spin. It dies only if you run into yourself and keeps growing. When you want to start over, hit the Restart button!"
 </Div>
 
 <div class="background1">
@@ -599,6 +600,50 @@ Player <span class="display-player playerX">X</span>s turn
 <Div class="descriptivetext1">
   "Tic Tac Toe is a competitive strategy game that we use to play as kids. Again, if you wanna feel a little nostalgic, grab a co-worker and give it a spin!"
 </Div>
+
+
+<!--
+based on: https://justinmezzell.tumblr.com/post/91142673693
+3D version: https://codepen.io/blucube/pen/jtcvC
+-->
+
+<div class="tape">
+  <div class="screws">
+    <i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="outdent"></div>
+  <div class="holes">
+    <i></i><i></i><i></i><i></i>
+  </div>
+  <div class="label">
+    <div class="inner">
+      <div class="linesz">
+        <i></i><i></i><i></i>
+      </div>
+      <div class="stripes">
+        <i></i><i></i>
+      </div>
+      <div class="cutout">
+        <div class="wheel">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="wheel">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="window">
+          <div class="spool-left"></div>
+          <div class="spool-right"></div>
+          <div class="reel-left"></div>
+          <div class="reel-right"></div>
+        </div>
+        <div class="ticks"></div>
+      </div>
+      <p class="quality">High Quality<br>Sound</p>
+      <p class="type">X<span>60</span></p>
+    </div>
+  </div>
+</div>
+  
 
 </body>
 <footer id="foots">
