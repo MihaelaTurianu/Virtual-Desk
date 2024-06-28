@@ -33,7 +33,7 @@ html {
   }
 
 body {
-  font-family: Agency FB;
+  font-family: "Teko", sans-serif;
   font-weight: 300;
   font-style: normal;
   width: 1050px;
@@ -48,7 +48,7 @@ background-repeat: repeat;
 }
 
 h1 {
-  font-family: Agency FB;
+  font-family: "Teko", sans-serif;
   font-weight: 400;
   font-size: 30px;
   color: #F4E869;
@@ -113,7 +113,7 @@ textarea.form-input { margin-bottom: 30px; }
   transition: .2s;
   cursor: pointer;
  top: 100px;
- font-family: Agency FB;
+ font-family: "Teko", sans-serif;
 margin-top: 50PX;
 }
 #btn-old-pc::after {
@@ -222,7 +222,7 @@ margin-top: 50PX;
   font-size: 1.3em;
   transition: .2s;
   cursor: pointer;
- font-family: Agency FB;
+  font-family: "Teko", sans-serif;
 top: 30px;
 left: -140px;
 }
