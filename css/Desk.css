@@ -34,8 +34,8 @@ background-image: url(https://cdn.architextures.org/textures/22/01/microperforat
   
   
 body {
-font-family: "Big Shoulders Display", sans-serif;
-font-weight: 400;
+  font-family: "Teko", sans-serif;
+font-weight: 100;
 font-style: normal;
 width: 1040px;
 margin: 0 auto;
@@ -157,8 +157,8 @@ background: #40514E;
 grid-area: nav;
 border-radius: var(--main-radius);
 font-size: 50px;
-font-weight: 400;
-font-family: "Big Shoulders Display", sans-serif;
+font-weight: 200;
+font-family: "Teko", sans-serif;
 animation-name:glows;
 animation-duration:1s;
 animation-iteration-count:infinite;
@@ -203,7 +203,6 @@ height: 60px;
 border-radius: 30px;
 flex: 1;
 font-size: 18px;
-font-weight: bold;
 color: antiquewhite;
 margin-right: -40px;
 margin-left: -10px;
@@ -254,14 +253,14 @@ margin-bottom: 80px;
     
 .weather h1 {
 font-size: 80px;
-font-weight: 500;
+font-weight: 100;
 color: antiquewhite;
 margin-top: -80px;
 }
     
 .weather h2 {
-font-size: 45px;
-font-weight: 400;
+font-size: 50px;
+font-weight: 100;
 color: antiquewhite;
 margin-top: -10px;
 }
@@ -305,15 +304,16 @@ margin-left: 10px;
     }
     
     .humidity, .wind, .grnd_level, .clouds {
-        font-size: 28px;
+        font-size: 35px;
         color: antiquewhite;
     }
     
     ::placeholder {
         color: antiquewhite;
         opacity: 1;
-        font-family: "Big Shoulders Display", sans-serif;
-       font-size: 20px;
+        font-family: "Teko", sans-serif;
+       font-size: 25px;
+       font-weight: 100;
       }
     
       input:focus::placeholder {
@@ -335,7 +335,7 @@ margin-left: 10px;
         border-color: #527853;
         box-shadow: 15px 15px 35px rgba(0,0,0,0.2),
         inset 0 0 30px rgba(0,0,0,0.4);
-        margin-top: -580px;
+        margin-top: -660px;
         margin-left: 640px;
         box-shadow: 10px 10px 20px #000000;
     }
@@ -621,13 +621,13 @@ margin-left: 10px;
         box-shadow: 10px 10px 30px #000000;
         background: #76885B;
         margin-left: 820px;
-        margin-top: 30px;
+        margin-top: 50px;
         color: antiquewhite;
         height: 170px;
       }
       
       #date {
-        font-size: 3.5em;
+        font-size: 3em;
         color: antiquewhite;
         margin-top: -13px;
         padding: 0;
@@ -672,7 +672,8 @@ margin-left: 10px;
         align-items: center;
       }
       #year {
-        font-size: 20px;
+        font-size: 25px;
+        margin-top: -10px;
       }
       
       .date-div {
@@ -686,9 +687,9 @@ margin-left: 10px;
       #day {
         padding: 0;
         position: absolute;
-        top: 43px;
+        top: 35px;
         bottom: 6px;
-        font-size: 20px;
+        font-size: 23px;
       }
 
  /*Joke Gen*/
@@ -707,11 +708,11 @@ margin-left: 10px;
         box-shadow: 10px 10px 30px #000000;
         margin-top: 180px;
         color: antiquewhite;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
         word-wrap: break-word;
-        font-family: "Kalam", cursive;
-        font-weight: 500;
+        font-family: "Teko", sans-serif;
+        font-weight: 100;
         font-style: normal;
         margin-left: 20px;
     }
@@ -743,16 +744,16 @@ margin-left: 10px;
         background:#1C0A00;
         border: none;
         padding: 5px;
-        font-size: 18px;
+        font-size: 30px;
         color: antiquewhite;
-        font-weight: 600;
+        font-weight: 200;
         padding: 12px 25px;
         margin: 0 auto;
         margin-top: 20px;
         border-radius: 5px;
         cursor: pointer;
         outline: none;
-        font-family: "Kalam", cursive;
+        font-family: "Teko", sans-serif;
     }
 
     /* Penholder */
@@ -1063,7 +1064,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 box-shadow: 0px 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
-font-family: "Big Shoulders Display", sans-serif;  } 
+font-family: "Teko", sans-serif; } 
   
 #btnc input{
 width: 100%;
@@ -1074,7 +1075,7 @@ border: none;
 font-size: 20px;
 color:antiquewhite;
 text-transform:capitalize;
-font-family: "Big Shoulders Display", sans-serif;
+font-family: "Teko", sans-serif;
 }
 
 
@@ -1094,6 +1095,9 @@ font-size: 30px;
   display: inline-block;
   padding: 15px;
  margin-left: 200px;
+ font-weight: 100;
+ font-size: 40px;
+ color: #c5d6a3;
 }
 
 #containeryz {
@@ -1125,6 +1129,7 @@ font-size: 30px;
 }
 #new-task input {
   font-size: 1em;
+  font-weight: 100;
   border: none;
   border-bottom: 2px solid #7F9F80;
   padding: 0.8em 0.5em;
@@ -1137,9 +1142,9 @@ font-size: 30px;
   border-color: #C5EBAA;
 }
 #new-task button {
-  font-weight: 800;
-  font-size: 1.3em;
-  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 100;
+  font-size: 1.8em;
+  font-family: "Teko", sans-serif;
   background-color: #BACD92;
   color: #1C0A00;
   outline: none;
@@ -1164,8 +1169,9 @@ font-size: 30px;
   cursor: pointer;
 }
 .task span {
+  font-family: "Teko", sans-serif;
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 100;
 }
 .task button {
   color: #000;
@@ -1203,7 +1209,7 @@ font-size: 30px;
 .scroller {
   border: 5px solid black;
   background-color: red;
-  height: 80px;
+  height: 85px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -1220,7 +1226,7 @@ font-size: 30px;
   display: inline-block;
   width: 90%;
   color: yellow;
-  font-weight: 900;
+  font-weight: 200;
   text-align: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -1248,11 +1254,12 @@ font-size: 30px;
   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
   border-radius: 5px;
   z-index: 1;
-  font-size: 20px;
+  font-size: 25px;
   transition: .2s;
   cursor: pointer;
- font-family: Agency FB;
+  font-family: "Teko", sans-serif;
  margin-right: -138px;
+ font-weight: 100;
 }
 
 #btn-old-pc::after {
@@ -1264,7 +1271,6 @@ font-size: 30px;
   background-color: #5A639C;
   color: #BEFFF7;
   text-shadow: 0px 2px 1px #1a2b2c;
-  font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
@@ -1320,10 +1326,10 @@ z-index: 1;
   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
   border-radius: 5px;
   z-index: 1;
-  font-size: 20px;
+  font-size: 25px;
   transition: .2s;
   cursor: pointer;
- font-family: Agency FB;
+  font-family: "Teko", sans-serif;
  margin-right: -138px;
 }
 
@@ -1336,7 +1342,6 @@ z-index: 1;
   background-color: #557A46;
   color: #BEFFF7;
   text-shadow: 0px 2px 1px #1a2b2c;
-  font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
@@ -1376,10 +1381,10 @@ z-index: 1;
   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
   border-radius: 5px;
   z-index: 1;
-  font-size: 20px;
+  font-size: 25px;
   transition: .2s;
   cursor: pointer;
- font-family: Agency FB;
+  font-family: "Teko", sans-serif;
  margin-right: -138px;
 }
 
@@ -1392,7 +1397,6 @@ z-index: 1;
   background-color: #9153F4;
   color: #BEFFF7;
   text-shadow: 0px 2px 1px #1a2b2c;
-  font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
@@ -1432,10 +1436,10 @@ z-index: 1;
   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
   border-radius: 5px;
   z-index: 1;
-  font-size: 20px;
+  font-size: 25px;
   transition: .2s;
   cursor: pointer;
- font-family: Agency FB;
+  font-family: "Teko", sans-serif;
  margin-right: -138px;
 }
 
@@ -1448,7 +1452,6 @@ z-index: 1;
   background-color: #36BA98;
   color: #BEFFF7;
   text-shadow: 0px 2px 1px #1a2b2c;
-  font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
@@ -1594,9 +1597,10 @@ ul.social-network li {
 }
 
 .footsh {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 35px;
   margin-bottom:10px;
+  font-weight: 100;
 }
 
 .text-center {
