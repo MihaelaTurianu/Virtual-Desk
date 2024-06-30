@@ -41,7 +41,6 @@ html {
    color: #A3C9AA;
    font-size: 20px;
    font-family: "Teko", sans-serif;
-    position: absolute;
     }
 
 
@@ -75,7 +74,7 @@ html {
         font-size: 20px;
         transition: .2s;
         cursor: pointer;
-       font-family: "Teko", sans-serif;
+       font-family: Agency FB;
        margin-right: -138px;
       }
       
@@ -447,7 +446,7 @@ html {
   }
   #author h1 {
     margin-top: 100px;
-    font-size: 20x;
+    font-size: 30x;
     font-family: "Teko", sans-serif;
     font-weight: 100;
 
@@ -472,7 +471,7 @@ html {
   .background1 {
       display: flex;
       width: 600px;
-      height: 750px;
+      height: 700px;
       flex-flow: column wrap;
       justify-content: center;
       align-items: center;
