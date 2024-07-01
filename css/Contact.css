@@ -51,7 +51,7 @@ h1 {
   font-family: "Teko", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #F4E869;
+  color: #FFBB64;
 }
 
 .form-title { margin-bottom: 20px; }
@@ -62,19 +62,19 @@ h1 {
 }
 
 .form-input {
-  color: #F4E869;
+  color: #5C469C;
   font-size:15px;
   font-weight: 300;
-  background: #35495E;
+  background: #03001C;
   width: 400px;
   margin-left:120px;
 }
 
 .form-input::placeholder { 
   font-weight: var(--fw-500); 
-  font-family: Agency FB; 
-  font-size: larger; 
-  color: #FCFFB2;
+  font-family: "Teko", sans-serif; 
+  font-size: 25px; 
+  color: #FFBB64;
 }
 
 
@@ -98,10 +98,10 @@ textarea.form-input { margin-bottom: 30px; }
 /*  Old PC Plastic BTN */
 #btn-old-pc {
   background-color: #080808;
-  color: #D3D04F;
+  color: #FFBB64;
   text-align: center;
   position: relative;
-  width: 150px;
+  width: 137px;
   height: 50px;
   text-decoration: none;
   padding: 10px 20px;
@@ -112,7 +112,7 @@ textarea.form-input { margin-bottom: 30px; }
   font-size: 1.3em;
   transition: .2s;
   cursor: pointer;
- top: 80px;
+ top: 100px;
  font-family: "Teko", sans-serif;
 margin-top: 50PX;
 }
@@ -123,7 +123,7 @@ margin-top: 50PX;
   position: absolute;
   z-index: -1;
   background-color: #2a3c44;
-  color: #D3D04F;
+  color: #FFBB64;
   text-shadow: 0px 2px 1px #1a2b2c;
   font-weight: bold;
   top: 0;
@@ -169,7 +169,8 @@ margin-top: 50PX;
   width: 970px;
   height: 580px;
   border-radius: 5px;
-  background-color: #111; 
+  background-image: linear-gradient(60deg, #26001B 0%, #1B262C 100%);
+ background-blend-mode: multiply;
   transition: all ease-in-out;
   align-items: center;
 }
@@ -182,13 +183,13 @@ margin-top: 50PX;
   margin-top: -7px;
   left: -2%;
   content: "";
-  height: 9100px;
+  height: 910px;
   width: 1007px;
   border-radius: 8px;
   border: 0.1px solid rgba(43, 43, 43, 0.199);
   background-image: linear-gradient(
       var(--rotate),
-      #35374B,#344955, #50727B,#D3D04F);
+      #35374B,#344955, #50727B,#FFBB64);
   transition: opacity 2s ease-in-out;
   animation: swirl 5s linear infinite;
 }
@@ -207,10 +208,10 @@ margin-top: 50PX;
 
 #btn-old-pc1 {
   background-color: #080808;
-  color: #D3D04F;
+  color: #FFBB64;
   text-align: center;
   position: relative;
-  width: 190px;
+  width: 180px;
   height: 60px;
   text-decoration: none;
   padding: 10px 20px;
@@ -218,7 +219,7 @@ margin-top: 50PX;
   box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
   border-radius: 5px;
   z-index: 1;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.3em;
   transition: .2s;
   cursor: pointer;
@@ -233,7 +234,7 @@ left: -140px;
   position: absolute;
   z-index: -1;
   background-color: #2a3c44;
-  color: #D3D04F;
+  color: #FFBB64;
   text-shadow: 0px 2px 1px #1a2b2c;
   font-weight: bold;
   top: 0;
@@ -258,4 +259,18 @@ left: -140px;
   background-color: #1d323b;
   color: #35494e;
   box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
+}
+
+.officeimage {
+  width: 300px;
+  height: 300px;
+z-index: 1;
+margin-top: -2200px;
+margin-left: 800px;
+}
+
+#offimg {
+  width: 350px;
+  height: 350px;
+  z-index: 1;
 }
