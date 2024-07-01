@@ -13,11 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Keania+One&family=Kenia&family=Mr+Dafoe&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Keania+One&family=Kenia&family=Mr+Dafoe&family=Orbitron:wght@400..900&family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="stickydiv">
-        <a id="btn-old-pc3" href="./Desk.html" data-title="Back to Desk"></a>
+        <a id="btn-old-pc3" href="./Desk.html" data-title="Desk Page"></a>
         <a id="btn-old-pc3" href="./Contact.html" data-title="Contact"></a>
       </div>   
 
@@ -34,7 +35,7 @@
       <div class="wrapper">
         <button id="replay">
           <i class="fa-regular fa-play"></i>
-          RESTART
+          Restart
         </button>
         <div id="canvas">
     
@@ -46,7 +47,7 @@
         </div>
       </div>
       <div id="author">
-        <h1>Adder</h1> <span class="s1">inspired by Ibrahim Fariat</span><span class="s2">To start the game just click <br> on the canvas and use the<br> keyboard navigating arrows</span>
+        <h1 class="header-wrap" style="font-size: 40px; margin-top: 100px; margin-bottom: 50px; font-weight: 100;">Adder</h1> <span class="s1">Inspired by Ibrahim Fariat</span><span class="s2">To start the game just click on<br>  the canvas and use the keyboard navigating arrows</span>
       </div>
     </div>
 
@@ -446,7 +447,7 @@ initialize();
 </Div>
 
 <div class="background1">
-  <section class="title1">
+  <section class="header-wrap">
 <h1>
   Tic Tac Toe
 </h1>
@@ -467,7 +468,7 @@ Player <span class="display-player playerX">X</span>s turn
   </section>
   <section class="display announcer hide"></section>
   <section class="controls1">
-    <button id="resetsz">Reset</button>
+    <button id="replay" style="margin-left: -450px; margin-top: -340px;">Restart</button>
   </section>
 </div>
 <script>
@@ -643,7 +644,38 @@ based on: https://justinmezzell.tumblr.com/post/91142673693
     </div>
   </div>
 </div>
-  
+
+
+<div class="main">
+  <div class="bmo">
+    <div class="face">
+      <div class="face__l"></div>
+      <div class="face__eye"></div>
+      <div class="face__mouth"></div>
+      <div class="face__eye"></div>
+    </div>
+    <div class="control">
+      <div class="control__plus"></div>
+      <div class="control__plus"></div>
+      <div class="control__button"></div>
+      <div class="control__button"></div>
+    </div>
+    <div class="line">
+      <div class="ln line__1"></div>
+      <div class="ln line__2"></div>
+      <div class="ln line__3"></div>
+      <div class="ln line__3"></div>
+      <div class="ln line__3"></div>
+    </div>
+    <div class="head"></div>
+    <div class="drop"></div>
+    <div class="arm arm-l"></div>
+    <div class="arm arm-r"></div>
+    <div class="leg leg-l"></div>
+    <div class="leg leg-r"></div>
+  </div>
+</div>
+
 
 </body>
 <footer id="foots">
