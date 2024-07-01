@@ -112,7 +112,7 @@ textarea.form-input { margin-bottom: 30px; }
   font-size: 1.3em;
   transition: .2s;
   cursor: pointer;
- top: 100px;
+ top: 80px;
  font-family: "Teko", sans-serif;
 margin-top: 50PX;
 }
@@ -167,7 +167,7 @@ margin-top: 50PX;
   margin:20% auto;
   padding: 150px 0;
   width: 970px;
-  height: 580px;
+  height: 570px;
   border-radius: 5px;
   background-color: #111; 
   transition: all ease-in-out;
@@ -182,7 +182,7 @@ margin-top: 50PX;
   margin-top: -7px;
   left: -2%;
   content: "";
-  height: 900px;
+  height: 890px;
   width: 1007px;
   border-radius: 8px;
   border: 0.1px solid rgba(43, 43, 43, 0.199);
