@@ -100,6 +100,7 @@ textarea.form-input { margin-bottom: 30px; }
   background-color: #080808;
   color: #FFBB64;
   text-align: center;
+  font-size: 400;
   position: relative;
   width: 137px;
   height: 50px;
@@ -135,6 +136,7 @@ margin-top: 50PX;
   border-bottom: 12px solid #101b1c;
   border-radius: 6px;
   opacity: 1;
+  font-size: 400;
   box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #35374B;
   transition: .2s;
 }
@@ -146,6 +148,7 @@ margin-top: 50PX;
   border-right: 8px solid #2b2725;
   background-color: #1d323b;
   color: #35494e;
+  font-size: 400;
   box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
 }
 
