@@ -10,54 +10,62 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 </head>
 <body>
-    <section class="card">
-
-        <h1 class="h1 form-title">Contact your office POC Mihaela:</h1>
-
-        <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
-
-          <div class="input-wrapper">
-            <input type="hidden" name="access_key" value="7a91096d-cf98-416b-ba51-aa004691c264">
-            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-          </div>
-
-          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-          <button id="btn-old-pc1" type="submit" disabled data-form-btn><span>Send Message</span>
-         
-          
-            
-          </button>
-<script>// contact form variables
-    const form = document.querySelector("[data-form]");
-    const formInputs = document.querySelectorAll("[data-form-input]");
-    const formBtn = document.querySelector("[data-form-btn]");
-    
-    // add event to all form input field
-    for (let i = 0; i < formInputs.length; i++) {
-      formInputs[i].addEventListener("input", function () {
-    
-        // check form validation
-        if (form.checkValidity()) {
-          formBtn.removeAttribute("disabled");
-        } else {
-          formBtn.setAttribute("disabled", "");
-        }
-    
-      });
-    }</script>
-        </form>
-            
-        <a id="btn-old-pc" href="./Desk.html" data-title="Back to Desk"></a>
+  <div class="wrapper centered">
+    <form class="postcard" action="">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1bafc2fa-cc31-4e36-b718-4246d87d2cf2/dekst3p-71203106-be50-44a3-b424-e377c6572bef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFiYWZjMmZhLWNjMzEtNGUzNi1iNzE4LTQyNDZkODdkMmNmMlwvZGVrc3QzcC03MTIwMzEwNi1iZTUwLTQ0YTMtYjQyNC1lMzc3YzY1NzJiZWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7-A0vKI8mlmnR-RSxMJrD2Z8JNxoflO0mmF0qigua2s" alt="">
+      <div class="receiver absolute">
+        <label for="r-name" >To: </label>
+        <input type="text" name="receiver-name" placeholder="">
       </div>
-      </section>
+      <div class="sender absolute">
+        <label for="s-name" >From: </label>
+        <input type="text" name="sender-name" placeholder="">
+      </div>
+      <div class="reply absolute">
+        <label for="t-reply" >Email: </label>
+        <input type="text" name="reply-text" placeholder="">
+      </div>
+      <div class="message absolute">
+        <label for="t-message" >To your POC, Mihaela: </label>
+        <br>
+        <textarea name="message" rows="12" cols="50" placeholder="I hope this email finds you well..."></textarea>
+      </div>
+      <div class="send-btn absolute">
+        <button type="submit" name="button">Send your message >>></button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="paper">
+      <h1>Contact Us</h1>
+      <p id="flyer">We look forward to hearing from you! Please don't ever hesitate to write, we will be delighted to read news from you!</p>
+    </div>
+    <div class="paper" style="width: 16.2rem; height:170px">
+      <h1>Adress <i class="fa-solid fa-location-dot"></i></h1>
+      <p id="flyer"><i class="fa-solid fa-magnifying-glass-location" style="color:#C5FFF8;"></i> World Wide Web,<br><i class="fa-solid fa-street-view" style="color:#C5FFF8;"></i> 22 Github Street,<br><i class="fa-solid fa-city" style="color:#C5FFF8;"></i> Mihaelaland Building,<br> <i class="fa-solid fa-dice-six" style="color:#C5FFF8;"></i> Floor 6</p>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/3dd48f99d8.js" crossorigin="anonymous"></script>
+
+
+
+  <div class="stickydiv">
+    <a id="btn-old-pc3" href="./Desk.html" data-title="Desk Page"></a>
+    <a id="btn-old-pc3" href="./PlayRoom.html" data-title="Play Room"></a>
+  </div>   
+  <div class="loc">
+    <img src="./images/Screenshot 2024-07-03 222759.png" width="1200px" style="margin: auto; margin-left: -100px;" alt="">
+  </div>
+  <div class="rounded-social-buttons">
+    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
     </body>
 </html>
 
-<div class="officeimage">
-  <img id="offimg" src="https://cdn.pixabay.com/photo/2024/06/13/07/56/ai-generated-8826972_640.png">
-</div>
