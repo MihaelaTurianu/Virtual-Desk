@@ -468,7 +468,7 @@ Player <span class="display-player playerX">X</span>s turn
   </section>
   <section class="display announcer hide"></section>
   <section class="controls1">
-    <button id="replay" style="margin-left: -450px; margin-top: -340px;">Restart</button>
+    <button id="resetsz" style="margin-left: -450px; margin-top: -340px;">Restart</button>
   </section>
 </div>
 <script>
@@ -487,12 +487,6 @@ Player <span class="display-player playerX">X</span>s turn
     const TIE = 'TIE';
 
 
-    /*
-        Indexes within the board
-        [0] [1] [2]
-        [3] [4] [5]
-        [6] [7] [8]
-    */
 
     const winningConditions = [
         [0, 1, 2],
@@ -603,10 +597,7 @@ Player <span class="display-player playerX">X</span>s turn
 </Div>
 
 
-<!--
-based on: https://justinmezzell.tumblr.com/post/91142673693
-3D version: https://codepen.io/blucube/pen/jtcvC
--->
+
 
 <div class="tape">
   <div class="screws">
@@ -679,24 +670,17 @@ based on: https://justinmezzell.tumblr.com/post/91142673693
 
 </body>
 <footer id="foots">
-    <div class="col-md-3">
-              <h4 class="footsh">Find me on </h4>
-                  <ul class="social-network social-circle">
-                   <li><a href="https://www.youtube.com/channel/UCKTAHVPmusXv0TFWSEweevA" class="icoYoutube" title="Youtube"><i class="fa-brands fa-square-youtube"></i></a></li>
-                   <li><a href="https://www.linkedin.com/in/turianu-mihaela-253675277/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                   <li><a href="https://www.instagram.com/mishaurbanexploring/?hl=en" class="icoInstagram" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
-                  </ul>				
-          </div>
-          </div>
-        <div class="row">
-          <div class="col-md-12 copy">
-            <p class="text-center">Project realized by Mihaela Turianu - 2024</p>
-          </div>
-        </div>
-      
-      
-        </div>
-        </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+  <footer>
+    <div class="rounded-social-buttons">
+                      <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                      <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </div>
+  </footer>
+
       </footer>
     </footer>
 </html>
