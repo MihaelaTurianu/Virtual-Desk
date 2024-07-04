@@ -1,12 +1,17 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url(https://cdn.architextures.org/textures/22/08/-chantilly-62eb861f96df4-1200.jpg);
+  background: url(https://pixeljoint.com/files/icons/full/nightsky_l.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 40px;
   }
 
   ::-webkit-scrollbar {
     width: 1.8em;
-    background: #543310;
+    background: #131842;
     height: 100%;
     }
     
@@ -18,7 +23,7 @@ html {
     ::-webkit-scrollbar-thumb{
     background: #5F6F52;
     border-radius: 100vw;
-    border: .40em solid #2C3639;
+    border: .40em solid #49108B;
     }
     
     
@@ -33,15 +38,13 @@ html {
  width: 350px;
  padding: 25px;
  border-radius: 15px;
- border: #A7FF83 1px solid;
- box-shadow: 3px 3px 23px #00FFAB;
  margin-left: 640px;
  margin-top: -460px;
  text-align: justify;
  text-justify: newspaper;
  color: #A3C9AA;
  font-size: 25px;
- background: #070F2B;
+ background: #3C2F3D;
   }
 
 
@@ -51,13 +54,13 @@ html {
   font-style: normal;
   width: 1040px;
   margin: 0 auto;
-  height: 2000px;
-  background: radial-gradient(#1B4242, #092635, #001524);
+  height: 1800px;
+  background: #0D132A;
   background-blend-mode: multiply;
   background-repeat: repeat;
-  border-width: 15px;
+  border-width: 5px;
   border-style: solid;
-  border-image: linear-gradient(to right, #A3C9AA, #A3C9AA) 1;
+  padding: 10px;
   }
 
   #btn-old-pc3 {
@@ -69,7 +72,7 @@ html {
       height: 60px;
       text-decoration: none;
       display: inline-block;
-      box-shadow: 0px -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+      box-shadow: 0px -2px 2px 4px #000000, 2px 2px 2px 2px #000000, 2px -2px 2px 2px #000000, -2px 2px 2px 2px #000000;
       border-radius: 5px;
       z-index: 1;
       font-size: 12px;
@@ -85,21 +88,20 @@ html {
       display: block;
       position: absolute;
       z-index: -1;
-      background-color: #36BA98;
+      background-color: #26355D;
       color: #BEFFF7;
       text-shadow: 0px 2px 1px #1a2b2c;
-      font-weight: bold;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      border-top: 5px solid #97E7E1;
-      border-left: 8px solid #77B0AA;
-      border-right: 8px solid #135D66;
-      border-bottom: 12px solid #003C43;
+      border-top: 5px solid #635985;
+      border-left: 8px solid #443C68;
+      border-right: 8px solid #393053;
+      border-bottom: 12px solid #18122B;
       border-radius: 6px;
       opacity: 1;
-      box-shadow: inset 10px -5px 14px #116D6E, inset -10px -7px 22px #35374B;
+      box-shadow: inset 10px -5px 14px #141E46, inset -10px -7px 22px #1E0342;
       transition: .2s;
       text-align: center;
     
@@ -119,14 +121,10 @@ html {
     .stickydiv {
       display: flex;
       flex-direction: column;
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 0;
-    margin-left: 1020px;
-    border: #A3C9AA  15px solid;
+      position: relative;
+      top: 7px;
+    margin-left: 860px;
     width: 175px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
     z-index: 1;
     }
 
@@ -136,14 +134,14 @@ html {
 
     .lines {
       position: relative;
-      width: 1010px;
+      width: 600px;
       height: 4em;
       background-image: url(https://images.squarespace-cdn.com/content/v1/6378c229f19acf2644411a4f/1c77c347-717f-447d-b0e9-6535b87bc1ba/3.png);
       background-size: 2px 0.7em;
       box-shadow: 0 0 1em rgba(color, 0.9);
       transform: translateY(-1em);
       left: 0;
-      margin-top: -100px;
+      margin-top: -80px;
     }
     
     .ret1 {
@@ -200,9 +198,6 @@ html {
 
       
 #foots {
-  background: #16222A;
-  background: -webkit-linear-gradient(59deg, #50623A, #12372A);
-  background: linear-gradient(59deg, #50623A, #12372A);
   color: white;
   align-items: center;
   display: flex;
@@ -211,114 +206,96 @@ html {
   margin: -50px;
   width: 1011px;
   margin-left:0;
-  height: 180px;
-  border-top:  #A3C9AA  15px solid;
-  margin-top: 1186px;
-}
-
-
-#foots a{
-  border-top: s;
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-#foots a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 10px;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #3B5998;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #44BCDD;
-}
-
-.social-circle li a {
-  display: inline-block;
+  height: 100px;
+  margin-top: 1070px;
   position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
 }
 
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
+
+
+textarea {
+  resize: none;
 }
 
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
 }
 
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
+
+.svg-inline--fa {
+vertical-align: -0.200em;
 }
 
-.social-network a {
-  background-color: #F9F9F9;
+.rounded-social-buttons {
+text-align: center;
 }
 
-.footsh {
-  font-size: 20px;
-  margin-left: 28px;
-  margin-top:-5px;
-  margin-bottom: 5px;
+.rounded-social-buttons .social-button {
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 3.125rem;
+height: 3.125rem;
+border: 0.125rem solid transparent;
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 1.5625rem;
+font-weight: normal;
+line-height: 2em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 0.25rem;
+margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+-webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+}
+
+.rounded-social-buttons  .fa-linkedin, .fa-youtube, .fa-instagram {
+font-size: 25px;
+}
+
+
+.rounded-social-buttons .social-button.linkedin {
+background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+color: #007bb5;
+background: #fefefe;
+border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+color: #bb0000;
+background: #fefefe;
+border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+background: #FF06B7;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+color: #FF06B7;
+background: #fefefe;
+border-color: #FF06B7;
 }
 
 .text-center {
@@ -342,9 +319,9 @@ button:focus {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: #092635;
-  border: #A7FF83 1px solid;
-  box-shadow: 3px 3px 23px #998CEB;
+  background: linear-gradient(to right, #151515, #1F4068, #301B3F, #1F4068, #151515);
+  border: 1px solid silver;
+  box-shadow: 3px 3px 13px #8566AA;
   border-radius: 10px;
   margin-left: 20px;
   margin-top: 80px;
@@ -370,7 +347,7 @@ h2 {
   font-size: 40px;
   font-weight: 200;
   transform: rotate(-90deg);
-  color: #00FFAB;
+  color: #FF06B7;
   font-family: "Teko", sans-serif;
 }
 .noselect {
@@ -388,7 +365,7 @@ h2 {
   transform: rotate(270deg);
   cursor: pointer;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: -50px;
+  margin-left: -45px;
 }
 #replay:hover {
   background: #9400FF;
@@ -423,7 +400,7 @@ h2 {
 #canvas{
   border: #A7FF83 1px solid;
   box-shadow: 3px 3px 23px #7027A0;
-  background: #204051;
+  background: #5C835A;
   margin-top: 30px;
   border-radius: 5px;
   margin-left: -30px;
@@ -473,12 +450,12 @@ h2 {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: #092635;
-    border: #F3FF93  1px solid;
+    background: linear-gradient(to right, #151515, #1F4068, #301B3F, #1F4068, #151515);
+    border: silver  1px solid;
+    box-shadow: 3px 3px 13px #8566AA;
     border-radius: 10px;
     margin-left: 20px;
-    margin-top: 180px;
-    box-shadow: 3px 3px 23px #998CEB;
+    margin-top: 220px;
   }
 
 
@@ -526,15 +503,15 @@ h2 {
   font-size: 50px;
   cursor: pointer;
   background-color: #070F2B;
-  font-family: "Teko", sans-serif;
+  font-family: "Press Start 2P", system-ui;
   font-weight: 200;
 }
 
 .playerX {
-  color: #F637EC;}
+  color: #00FFAB;}
 
 .playerO {
-  color: #A149FA;
+  color: #FBCB0A;
 }
 
 .controls1 {
@@ -546,16 +523,18 @@ h2 {
 }
 
 #resetsz {
-  background-color: #4A249D;
-  color: #9BEC00;
-  border-radius: 8px ;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  font-family: "Teko", sans-serif;
-  width: 130px;
-  border: #9BEC00 solid 1px;
-  height: 43px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    padding: 15px 20px;
+    background: #49108B;
+    border: 1px solid #F8FF95;
+    color: #F3FF93;
+    border-radius: 30px;
+    font-weight: 100;
+    transform: rotate(270deg);
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: -45px;
 }
 
 .display {
@@ -582,13 +561,13 @@ width: 56em;
 height: 34.5em;
 background-color: #B8B5FF;
 border-radius: 1.2em;
-position: relative;
+position: static;
 perspective: 50em;
 font-family: Lato, 'Hevetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 900;
 text-transform: uppercase;
-margin-top: -1570px;
-margin-left: 400px;
+margin-top: -1565px;
+margin-left: 200px;
 }
 @media only screen and (min-width: 400px) {
 .tape {
